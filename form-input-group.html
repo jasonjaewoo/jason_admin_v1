@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<title>입력양식</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<!--<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">-->
+				</div>
+				<div>
+					<h4 class="logo-text">로고</h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+
+
+				<li class="menu-label">입력양식</li>
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class='bx bx-message-square-edit'></i>
+						</div>
+						<div class="menu-title">입력양식</div>
+					</a>
+					<ul>
+						<li> <a href="form-elements.html"><i class="bx bx-right-arrow-alt"></i>입력 요소 </a>
+						</li>
+						<li> <a href="form-input-group.html"><i class="bx bx-right-arrow-alt"></i>입력 그룹</a>
+						</li>
+						<li> <a href="form-layouts.html"><i class="bx bx-right-arrow-alt"></i>입력양식 레이아웃</a>
+						</li>
+						<li> <a href="form-validations.html"><i class="bx bx-right-arrow-alt"></i>입력양식 오류체크</a>
+						</li>
+						<li> <a href="form-wizard.html"><i class="bx bx-right-arrow-alt"></i>입력양식 마법사</a>
+						</li>
+						<li> <a href="form-text-editor.html"><i class="bx bx-right-arrow-alt"></i>텍스트 편집기</a>
+						</li>
+						<li> <a href="form-file-upload.html"><i class="bx bx-right-arrow-alt"></i>파일 업로드</a>
+						</li>
+						<li> <a href="form-date-time-pickes.html"><i class="bx bx-right-arrow-alt"></i>날짜 픽업</a>
+						</li>
+						<li> <a href="form-select2.html"><i class="bx bx-right-arrow-alt"></i>셀렉터</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="bx bx-grid-alt"></i>
+						</div>
+						<div class="menu-title">테이블</div>
+					</a>
+					<ul>
+						<li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>기본 테이블</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="menu-label">Pages</li>
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="bx bx-lock"></i>
+						</div>
+						<div class="menu-title">Authentication</div>
+					</a>
+					<ul>
+						<li> <a href="authentication-signin.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In</a>
+						</li>
+						<li> <a href="authentication-signup.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up</a>
+						</li>
+						<li> <a href="authentication-signin-with-header-footer.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In with Header & Footer</a>
+						</li>
+						<li> <a href="authentication-signup-with-header-footer.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up with Header & Footer</a>
+						</li>
+						<li> <a href="authentication-forgot-password.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Forgot Password</a>
+						</li>
+						<li> <a href="authentication-reset-password.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Reset Password</a>
+						</li>
+		
+					</ul>
+				</li>
+				<li>
+					<a href="user-profile.html">
+						<div class="parent-icon"><i class="bx bx-user-circle"></i>
+						</div>
+						<div class="menu-title">사용자 프로필</div>
+					</a>
+				</li>
+
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+					<div class="top-menu-left d-none d-lg-block">
+						<ul class="nav">
+						  <li class="nav-item">
+							<a class="nav-link" href="app-emailbox.html"><i class='bx bx-envelope'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-chat-box.html"><i class='bx bx-message'></i></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="app-fullcalender.html"><i class='bx bx-calendar'></i></a>
+						  </li>
+						  <li class="nav-item">
+							  <a class="nav-link" href="app-to-do.html"><i class='bx bx-check-square'></i></a>
+						  </li>
+					  </ul>
+					 </div>
+					<div class="search-bar flex-grow-1">
+						<div class="position-relative search-bar-box">
+							<input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
+						</div>
+					</div>
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item mobile-search-icon">
+								<a class="nav-link" href="#">	<i class='bx bx-search'></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+									<i class='bx bx-bell'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">알림</p>
+											<p class="msg-header-clear ms-auto">모두 읽기</p>
+										</div>
+									</a>
+									<div class="header-notifications-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">테스트<span class="msg-time float-end">14초 전에
+												</span></h6>
+													<p class="msg-info">5명 신규회원등록</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-danger text-danger"><i class="bx bx-cart-alt"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">산규 주문 <span class="msg-time float-end">2 분전에
+												</span></h6>
+													<p class="msg-info">새로운 주문이 들어왔습니다</p>
+												</div>
+											</div>
+										</a>
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-success text-success"><i class="bx bx-file"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">계산서 발행<span class="msg-time float-end">19 분전에
+												</span></h6>
+													<p class="msg-info">홍길동 고객님의 계산서가 발행되었습니다</p>
+												</div>
+											</div>
+										</a>
+
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">전체알람 보기</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+
+							</li>
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="https://via.placeholder.com/110x110" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">홍길동</p>
+								<p class="designattion mb-0">개발자</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>프로필</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>설정</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-home-circle'></i><span>대시보드</span></a>
+							</li>
+
+							<li>
+								<div class="dropdown-divider mb-0"></div>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>로그아웃</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Forms</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">Input Group</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="ms-auto">
+						<div class="btn-group">
+							<button type="button" class="btn btn-primary">Settings</button>
+							<button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
+							</button>
+							<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
+								<a class="dropdown-item" href="javascript:;">Another action</a>
+								<a class="dropdown-item" href="javascript:;">Something else here</a>
+								<div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end breadcrumb-->
+				<div class="row">
+					<div class="col-xl-9 mx-auto">
+						<h6 class="mb-0 text-uppercase">기본예제</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1">@</span>
+									<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+								</div>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"> <span class="input-group-text" id="basic-addon2">@example.com</span>
+								</div>
+								<label for="basic-url" class="form-label">Your vanity URL</label>
+								<div class="input-group mb-3"> <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+									<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+								</div>
+								<div class="input-group mb-3"> <span class="input-group-text">$</span>
+									<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"> <span class="input-group-text">.00</span>
+								</div>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" placeholder="Username" aria-label="Username"> <span class="input-group-text">@</span>
+									<input type="text" class="form-control" placeholder="Server" aria-label="Server">
+								</div>
+								<div class="input-group"> <span class="input-group-text">With textarea</span>
+									<textarea class="form-control" aria-label="With textarea"></textarea>
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">랩핑</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group flex-nowrap"> <span class="input-group-text" id="addon-wrapping">@</span>
+									<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">크기</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group input-group-sm mb-3"> <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+									<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="input-group mb-3"> <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+									<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+								</div>
+								<div class="input-group input-group-lg"> <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+									<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">체크박스, 라디오</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3">
+									<div class="input-group-text">
+										<input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input">
+									</div>
+									<input type="text" class="form-control" aria-label="Text input with checkbox">
+								</div>
+								<div class="input-group">
+									<div class="input-group-text">
+										<input class="form-check-input" type="radio" value="" aria-label="Radio button for following text input">
+									</div>
+									<input type="text" class="form-control" aria-label="Text input with radio button">
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">다중 입력</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group"> <span class="input-group-text">First and last name</span>
+									<input type="text" aria-label="First name" class="form-control">
+									<input type="text" aria-label="Last name" class="form-control">
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">다중 추가</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3"> <span class="input-group-text">$</span>
+									<span class="input-group-text">0.00</span>
+									<input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)"> <span class="input-group-text">$</span>
+									<span class="input-group-text">0.00</span>
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">버튼 애드온</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3">
+									<button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+									<input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+								</div>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+								</div>
+								<div class="input-group mb-3">
+									<button class="btn btn-outline-secondary" type="button">Button</button>
+									<button class="btn btn-outline-secondary" type="button">Button</button>
+									<input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+									<button class="btn btn-outline-secondary" type="button">Button</button>
+									<button class="btn btn-outline-secondary" type="button">Button</button>
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">버튼, 드롭다운</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3">
+									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Something else here</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="#">Separated link</a>
+										</li>
+									</ul>
+									<input type="text" class="form-control" aria-label="Text input with dropdown button">
+								</div>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" aria-label="Text input with dropdown button">
+									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+									<ul class="dropdown-menu dropdown-menu-end">
+										<li><a class="dropdown-item" href="#">Action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Something else here</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="#">Separated link</a>
+										</li>
+									</ul>
+								</div>
+								<div class="input-group">
+									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action before</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Another action before</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Something else here</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="#">Separated link</a>
+										</li>
+									</ul>
+									<input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+									<ul class="dropdown-menu dropdown-menu-end">
+										<li><a class="dropdown-item" href="#">Action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Something else here</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="#">Separated link</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">시멘트 버튼</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3">
+									<button type="button" class="btn btn-outline-secondary">Action</button>
+									<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Something else here</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="#">Separated link</a>
+										</li>
+									</ul>
+									<input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+									<button type="button" class="btn btn-outline-secondary">Action</button>
+									<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">	<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu dropdown-menu-end">
+										<li><a class="dropdown-item" href="#">Action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Something else here</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="#">Separated link</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">사용자지정 양식</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3">
+									<label class="input-group-text" for="inputGroupSelect01">Options</label>
+									<select class="form-select" id="inputGroupSelect01">
+										<option selected>선택...</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+								<div class="input-group mb-3">
+									<select class="form-select" id="inputGroupSelect02">
+										<option selected>선택...</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+									<label class="input-group-text" for="inputGroupSelect02">옵션</label>
+								</div>
+								<div class="input-group mb-3">
+									<button class="btn btn-outline-secondary" type="button">Button</button>
+									<select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+										<option selected>선택...</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+								<div class="input-group">
+									<select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+										<option selected>선택...</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+									<button class="btn btn-outline-secondary" type="button">Button</button>
+								</div>
+							</div>
+						</div>
+						<h6 class="mb-0 text-uppercase">사용자지정 파일 입력</h6>
+						<hr/>
+						<div class="card">
+							<div class="card-body">
+								<div class="input-group mb-3">
+									<label class="input-group-text" for="inputGroupFile01">업로드</label>
+									<input type="file" class="form-control" id="inputGroupFile01">
+								</div>
+								<div class="input-group mb-3">
+									<input type="file" class="form-control" id="inputGroupFile02">
+									<label class="input-group-text" for="inputGroupFile02">업로드</label>
+								</div>
+								<div class="input-group mb-3">
+									<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+									<input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+								</div>
+								<div class="input-group">
+									<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+									<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2021. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+		</div>
+		<div class="switcher-body">
+			<div class="d-flex align-items-center">
+				<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+			</div>
+			<hr/>
+			<h6 class="mb-0">Theme Styles</h6>
+			<hr/>
+			<div class="d-flex align-items-center justify-content-between">
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
+					<label class="form-check-label" for="lightmode">Light</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
+					<label class="form-check-label" for="darkmode">Dark</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark">
+					<label class="form-check-label" for="semidark">Semi Dark</label>
+				</div>
+			</div>
+			<hr/>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
+				<label class="form-check-label" for="minimaltheme">Minimal Theme</label>
+			</div>
+			<hr/>
+			<h6 class="mb-0">Header Colors</h6>
+			<hr/>
+			<div class="header-colors-indigators">
+				<div class="row row-cols-auto g-3">
+					<div class="col">
+						<div class="indigator headercolor1" id="headercolor1"></div>
+					</div>
+					<div class="col">
+						<div class="indigator headercolor2" id="headercolor2"></div>
+					</div>
+					<div class="col">
+						<div class="indigator headercolor3" id="headercolor3"></div>
+					</div>
+					<div class="col">
+						<div class="indigator headercolor4" id="headercolor4"></div>
+					</div>
+					<div class="col">
+						<div class="indigator headercolor5" id="headercolor5"></div>
+					</div>
+					<div class="col">
+						<div class="indigator headercolor6" id="headercolor6"></div>
+					</div>
+					<div class="col">
+						<div class="indigator headercolor7" id="headercolor7"></div>
+					</div>
+					<div class="col">
+						<div class="indigator headercolor8" id="headercolor8"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end switcher-->
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
